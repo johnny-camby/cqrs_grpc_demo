@@ -1,0 +1,17 @@
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\BusinessLogic.deps.json
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\BusinessLogic.dll
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\BusinessLogic.pdb
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\Data.Repository.dll
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\XmlDataExtractManager.dll
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\Data.Repository.pdb
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\bin\Debug\net7.0\XmlDataExtractManager.pdb
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.csproj.AssemblyReference.cache
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.AssemblyInfoInputs.cache
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.AssemblyInfo.cs
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.csproj.CoreCompileInputs.cache
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.csproj.CopyComplete
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.dll
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\refint\BusinessLogic.dll
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\BusinessLogic.pdb
+D:\dev\cqrs_grpc_demo\src\BusinessLogic\obj\Debug\net7.0\ref\BusinessLogic.dll

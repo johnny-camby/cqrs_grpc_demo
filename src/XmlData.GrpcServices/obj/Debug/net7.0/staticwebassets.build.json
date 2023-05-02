@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "P4cq6HPittXexNwL4VDjyJqgahFkcKy1HzSOK/LTsBs=",
+  "Source": "XmlData.GrpcServices",
+  "BasePath": "_content/XmlData.GrpcServices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

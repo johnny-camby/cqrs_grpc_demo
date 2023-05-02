@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "XmlData.GrpcServices";
+
+package XmlDataGrpcServices;
+
+service CustomerData {
+	rpc GetCustomers (CustomersRequest) returns (CustomersResponse);
+	rpc CreateNew(CreateCustomerRequest) returns (CreateCustomerResponse);
+}
+
+message CustomersRequest {}
+
+message CustomersResponse {
+	repeated CustomerListVm customers = 1;
+}
+
+message CreateCustomerRequest {
+	CustomerListVm customer  = 1;
+}
+
+message CreateCustomerResponse {
+	CustomerListVm customer  = 1;
+}
+
+message CustomerListVm {
+	string Id = 1; // Guid
+    string CustomerID = 2;
+    string CompanyName = 3;
+    string ContactName = 4;
+    string ContactTitle = 5;
+    string Phone = 6;
+    string Fax = 7;
+}

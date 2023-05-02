@@ -1,0 +1,15 @@
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\bin\Debug\net7.0\XmlDataExtractManager.deps.json
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\bin\Debug\net7.0\XmlDataExtractManager.dll
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\bin\Debug\net7.0\XmlDataExtractManager.pdb
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\bin\Debug\net7.0\Data.Repository.dll
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\bin\Debug\net7.0\Data.Repository.pdb
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.csproj.AssemblyReference.cache
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.AssemblyInfoInputs.cache
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.AssemblyInfo.cs
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.csproj.CoreCompileInputs.cache
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.csproj.CopyComplete
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.dll
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\refint\XmlDataExtractManager.dll
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\XmlDataExtractManager.pdb
+D:\dev\cqrs_grpc_demo\src\XmlDataExtractManager\obj\Debug\net7.0\ref\XmlDataExtractManager.dll

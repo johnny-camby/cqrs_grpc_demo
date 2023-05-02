@@ -1,0 +1,2 @@
+obj\Debug\net7.0/Customer.cs \
+obj\Debug\net7.0/CustomerGrpc.cs: ../XmlData.GrpcServices/Protos/customer.proto

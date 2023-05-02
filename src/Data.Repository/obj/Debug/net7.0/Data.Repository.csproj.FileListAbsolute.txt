@@ -1,0 +1,12 @@
+D:\dev\cqrs_grpc_demo\src\Data.Repository\bin\Debug\net7.0\Data.Repository.deps.json
+D:\dev\cqrs_grpc_demo\src\Data.Repository\bin\Debug\net7.0\Data.Repository.dll
+D:\dev\cqrs_grpc_demo\src\Data.Repository\bin\Debug\net7.0\Data.Repository.pdb
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.csproj.AssemblyReference.cache
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.AssemblyInfoInputs.cache
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.AssemblyInfo.cs
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.csproj.CoreCompileInputs.cache
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.dll
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\refint\Data.Repository.dll
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\Data.Repository.pdb
+D:\dev\cqrs_grpc_demo\src\Data.Repository\obj\Debug\net7.0\ref\Data.Repository.dll

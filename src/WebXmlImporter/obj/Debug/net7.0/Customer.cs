@@ -28,18 +28,47 @@ namespace XmlData.GrpcServices {
             "b21lcnNSZXF1ZXN0IksKEUN1c3RvbWVyc1Jlc3BvbnNlEjYKCWN1c3RvbWVy",
             "cxgBIAMoCzIjLlhtbERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJMaXN0Vm0i",
             "TgoVQ3JlYXRlQ3VzdG9tZXJSZXF1ZXN0EjUKCGN1c3RvbWVyGAEgASgLMiMu",
-            "WG1sRGF0YUdycGNTZXJ2aWNlcy5DdXN0b21lckxpc3RWbSJPChZDcmVhdGVD",
+            "WG1sRGF0YUdycGNTZXJ2aWNlcy5DdXN0b21lckNyZWF0ZSJPChZDcmVhdGVD",
             "dXN0b21lclJlc3BvbnNlEjUKCGN1c3RvbWVyGAEgASgLMiMuWG1sRGF0YUdy",
-            "cGNTZXJ2aWNlcy5DdXN0b21lckxpc3RWbSKMAQoOQ3VzdG9tZXJMaXN0Vm0S",
-            "CgoCSWQYASABKAkSEgoKQ3VzdG9tZXJJRBgCIAEoCRITCgtDb21wYW55TmFt",
-            "ZRgDIAEoCRITCgtDb250YWN0TmFtZRgEIAEoCRIUCgxDb250YWN0VGl0bGUY",
-            "BSABKAkSDQoFUGhvbmUYBiABKAkSCwoDRmF4GAcgASgJMtMBCgxDdXN0b21l",
-            "ckRhdGESXQoMR2V0Q3VzdG9tZXJzEiUuWG1sRGF0YUdycGNTZXJ2aWNlcy5D",
-            "dXN0b21lcnNSZXF1ZXN0GiYuWG1sRGF0YUdycGNTZXJ2aWNlcy5DdXN0b21l",
-            "cnNSZXNwb25zZRJkCglDcmVhdGVOZXcSKi5YbWxEYXRhR3JwY1NlcnZpY2Vz",
-            "LkNyZWF0ZUN1c3RvbWVyUmVxdWVzdBorLlhtbERhdGFHcnBjU2VydmljZXMu",
-            "Q3JlYXRlQ3VzdG9tZXJSZXNwb25zZUIXqgIUWG1sRGF0YS5HcnBjU2Vydmlj",
-            "ZXNiBnByb3RvMw=="));
+            "cGNTZXJ2aWNlcy5DdXN0b21lckNyZWF0ZSIsChZHZXRDdXN0b21lckJ5SWRS",
+            "ZXF1ZXN0EhIKCmN1c3RvbWVySWQYASABKAkiTQoXR2V0Q3VzdG9tZXJCeUlk",
+            "UmVzcG9uc2USMgoIY3VzdG9tZXIYASABKAsyIC5YbWxEYXRhR3JwY1NlcnZp",
+            "Y2VzLkN1c3RvbWVyR2V0IksKElB1dEN1c3RvbWVyUmVxdWVzdBI1CghjdXN0",
+            "b21lchgBIAEoCzIjLlhtbERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJVcGRh",
+            "dGUiTAoTUHV0Q3VzdG9tZXJSZXNwb25zZRI1CghjdXN0b21lchgBIAEoCzIj",
+            "LlhtbERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJVcGRhdGUiKwoVRGVsZXRl",
+            "Q3VzdG9tZXJSZXF1ZXN0EhIKCmN1c3RvbWVySWQYASABKAkiGAoWRGVsZXRl",
+            "Q3VzdG9tZXJSZXNwb25zZSLdAQoLQ3VzdG9tZXJHZXQSCgoCSWQYASABKAkS",
+            "EgoKQ3VzdG9tZXJJRBgCIAEoCRITCgtDb21wYW55TmFtZRgDIAEoCRITCgtD",
+            "b250YWN0TmFtZRgEIAEoCRIUCgxDb250YWN0VGl0bGUYBSABKAkSDQoFUGhv",
+            "bmUYBiABKAkSCwoDRmF4GAcgASgJEg8KB0FkZHJlc3MYCCABKAkSDAoEQ2l0",
+            "eRgJIAEoCRIOCgZSZWdpb24YCiABKAkSEgoKUG9zdGFsQ29kZRgLIAEoBRIP",
+            "CgdDb3VudHJ5GAwgASgJIowBCg5DdXN0b21lckxpc3RWbRIKCgJJZBgBIAEo",
+            "CRISCgpDdXN0b21lcklEGAIgASgJEhMKC0NvbXBhbnlOYW1lGAMgASgJEhMK",
+            "C0NvbnRhY3ROYW1lGAQgASgJEhQKDENvbnRhY3RUaXRsZRgFIAEoCRINCgVQ",
+            "aG9uZRgGIAEoCRILCgNGYXgYByABKAki1AEKDkN1c3RvbWVyQ3JlYXRlEhIK",
+            "CkN1c3RvbWVySUQYASABKAkSEwoLQ29tcGFueU5hbWUYAiABKAkSEwoLQ29u",
+            "dGFjdE5hbWUYAyABKAkSFAoMQ29udGFjdFRpdGxlGAQgASgJEg0KBVBob25l",
+            "GAUgASgJEgsKA0ZheBgGIAEoCRIPCgdBZGRyZXNzGAcgASgJEgwKBENpdHkY",
+            "CCABKAkSDgoGUmVnaW9uGAkgASgJEhIKClBvc3RhbENvZGUYCiABKAUSDwoH",
+            "Q291bnRyeRgLIAEoCSLgAQoOQ3VzdG9tZXJVcGRhdGUSCgoCSWQYASABKAkS",
+            "EgoKQ3VzdG9tZXJJRBgCIAEoCRITCgtDb21wYW55TmFtZRgDIAEoCRITCgtD",
+            "b250YWN0TmFtZRgEIAEoCRIUCgxDb250YWN0VGl0bGUYBSABKAkSDQoFUGhv",
+            "bmUYBiABKAkSCwoDRmF4GAcgASgJEg8KB0FkZHJlc3MYCCABKAkSDAoEQ2l0",
+            "eRgJIAEoCRIOCgZSZWdpb24YCiABKAkSEgoKUG9zdGFsQ29kZRgLIAEoBRIP",
+            "CgdDb3VudHJ5GAwgASgJMo4ECgxDdXN0b21lckRhdGESXQoMR2V0Q3VzdG9t",
+            "ZXJzEiUuWG1sRGF0YUdycGNTZXJ2aWNlcy5DdXN0b21lcnNSZXF1ZXN0GiYu",
+            "WG1sRGF0YUdycGNTZXJ2aWNlcy5DdXN0b21lcnNSZXNwb25zZRJsCg9HZXRD",
+            "dXN0b21lckJ5SWQSKy5YbWxEYXRhR3JwY1NlcnZpY2VzLkdldEN1c3RvbWVy",
+            "QnlJZFJlcXVlc3QaLC5YbWxEYXRhR3JwY1NlcnZpY2VzLkdldEN1c3RvbWVy",
+            "QnlJZFJlc3BvbnNlEmQKCUNyZWF0ZU5ldxIqLlhtbERhdGFHcnBjU2Vydmlj",
+            "ZXMuQ3JlYXRlQ3VzdG9tZXJSZXF1ZXN0GisuWG1sRGF0YUdycGNTZXJ2aWNl",
+            "cy5DcmVhdGVDdXN0b21lclJlc3BvbnNlEmAKC1B1dEN1c3RvbWVyEicuWG1s",
+            "RGF0YUdycGNTZXJ2aWNlcy5QdXRDdXN0b21lclJlcXVlc3QaKC5YbWxEYXRh",
+            "R3JwY1NlcnZpY2VzLlB1dEN1c3RvbWVyUmVzcG9uc2USaQoORGVsZXRlQ3Vz",
+            "dG9tZXISKi5YbWxEYXRhR3JwY1NlcnZpY2VzLkRlbGV0ZUN1c3RvbWVyUmVx",
+            "dWVzdBorLlhtbERhdGFHcnBjU2VydmljZXMuRGVsZXRlQ3VzdG9tZXJSZXNw",
+            "b25zZUIXqgIUWG1sRGF0YS5HcnBjU2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -47,7 +76,16 @@ namespace XmlData.GrpcServices {
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomersResponse), global::XmlData.GrpcServices.CustomersResponse.Parser, new[]{ "Customers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CreateCustomerRequest), global::XmlData.GrpcServices.CreateCustomerRequest.Parser, new[]{ "Customer" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CreateCustomerResponse), global::XmlData.GrpcServices.CreateCustomerResponse.Parser, new[]{ "Customer" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerListVm), global::XmlData.GrpcServices.CustomerListVm.Parser, new[]{ "Id", "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.GetCustomerByIdRequest), global::XmlData.GrpcServices.GetCustomerByIdRequest.Parser, new[]{ "CustomerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.GetCustomerByIdResponse), global::XmlData.GrpcServices.GetCustomerByIdResponse.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.PutCustomerRequest), global::XmlData.GrpcServices.PutCustomerRequest.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.PutCustomerResponse), global::XmlData.GrpcServices.PutCustomerResponse.Parser, new[]{ "Customer" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.DeleteCustomerRequest), global::XmlData.GrpcServices.DeleteCustomerRequest.Parser, new[]{ "CustomerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.DeleteCustomerResponse), global::XmlData.GrpcServices.DeleteCustomerResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerGet), global::XmlData.GrpcServices.CustomerGet.Parser, new[]{ "Id", "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerListVm), global::XmlData.GrpcServices.CustomerListVm.Parser, new[]{ "Id", "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerCreate), global::XmlData.GrpcServices.CustomerCreate.Parser, new[]{ "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerUpdate), global::XmlData.GrpcServices.CustomerUpdate.Parser, new[]{ "Id", "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null)
           }));
     }
     #endregion
@@ -430,10 +468,10 @@ namespace XmlData.GrpcServices {
 
     /// <summary>Field number for the "customer" field.</summary>
     public const int CustomerFieldNumber = 1;
-    private global::XmlData.GrpcServices.CustomerListVm customer_;
+    private global::XmlData.GrpcServices.CustomerCreate customer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::XmlData.GrpcServices.CustomerListVm Customer {
+    public global::XmlData.GrpcServices.CustomerCreate Customer {
       get { return customer_; }
       set {
         customer_ = value;
@@ -527,7 +565,7 @@ namespace XmlData.GrpcServices {
       }
       if (other.customer_ != null) {
         if (customer_ == null) {
-          Customer = new global::XmlData.GrpcServices.CustomerListVm();
+          Customer = new global::XmlData.GrpcServices.CustomerCreate();
         }
         Customer.MergeFrom(other.Customer);
       }
@@ -548,7 +586,7 @@ namespace XmlData.GrpcServices {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::XmlData.GrpcServices.CustomerListVm();
+              Customer = new global::XmlData.GrpcServices.CustomerCreate();
             }
             input.ReadMessage(Customer);
             break;
@@ -570,7 +608,7 @@ namespace XmlData.GrpcServices {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::XmlData.GrpcServices.CustomerListVm();
+              Customer = new global::XmlData.GrpcServices.CustomerCreate();
             }
             input.ReadMessage(Customer);
             break;
@@ -628,10 +666,10 @@ namespace XmlData.GrpcServices {
 
     /// <summary>Field number for the "customer" field.</summary>
     public const int CustomerFieldNumber = 1;
-    private global::XmlData.GrpcServices.CustomerListVm customer_;
+    private global::XmlData.GrpcServices.CustomerCreate customer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::XmlData.GrpcServices.CustomerListVm Customer {
+    public global::XmlData.GrpcServices.CustomerCreate Customer {
       get { return customer_; }
       set {
         customer_ = value;
@@ -725,7 +763,7 @@ namespace XmlData.GrpcServices {
       }
       if (other.customer_ != null) {
         if (customer_ == null) {
-          Customer = new global::XmlData.GrpcServices.CustomerListVm();
+          Customer = new global::XmlData.GrpcServices.CustomerCreate();
         }
         Customer.MergeFrom(other.Customer);
       }
@@ -746,7 +784,7 @@ namespace XmlData.GrpcServices {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::XmlData.GrpcServices.CustomerListVm();
+              Customer = new global::XmlData.GrpcServices.CustomerCreate();
             }
             input.ReadMessage(Customer);
             break;
@@ -768,9 +806,1732 @@ namespace XmlData.GrpcServices {
             break;
           case 10: {
             if (customer_ == null) {
-              Customer = new global::XmlData.GrpcServices.CustomerListVm();
+              Customer = new global::XmlData.GrpcServices.CustomerCreate();
             }
             input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetCustomerByIdRequest : pb::IMessage<GetCustomerByIdRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetCustomerByIdRequest> _parser = new pb::MessageParser<GetCustomerByIdRequest>(() => new GetCustomerByIdRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetCustomerByIdRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCustomerByIdRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCustomerByIdRequest(GetCustomerByIdRequest other) : this() {
+      customerId_ = other.customerId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCustomerByIdRequest Clone() {
+      return new GetCustomerByIdRequest(this);
+    }
+
+    /// <summary>Field number for the "customerId" field.</summary>
+    public const int CustomerIdFieldNumber = 1;
+    private string customerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetCustomerByIdRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetCustomerByIdRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerId != other.CustomerId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetCustomerByIdRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerId.Length != 0) {
+        CustomerId = other.CustomerId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetCustomerByIdResponse : pb::IMessage<GetCustomerByIdResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetCustomerByIdResponse> _parser = new pb::MessageParser<GetCustomerByIdResponse>(() => new GetCustomerByIdResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetCustomerByIdResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCustomerByIdResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCustomerByIdResponse(GetCustomerByIdResponse other) : this() {
+      customer_ = other.customer_ != null ? other.customer_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCustomerByIdResponse Clone() {
+      return new GetCustomerByIdResponse(this);
+    }
+
+    /// <summary>Field number for the "customer" field.</summary>
+    public const int CustomerFieldNumber = 1;
+    private global::XmlData.GrpcServices.CustomerGet customer_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::XmlData.GrpcServices.CustomerGet Customer {
+      get { return customer_; }
+      set {
+        customer_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetCustomerByIdResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetCustomerByIdResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Customer, other.Customer)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (customer_ != null) hash ^= Customer.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (customer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Customer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (customer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Customer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (customer_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customer);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetCustomerByIdResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.customer_ != null) {
+        if (customer_ == null) {
+          Customer = new global::XmlData.GrpcServices.CustomerGet();
+        }
+        Customer.MergeFrom(other.Customer);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (customer_ == null) {
+              Customer = new global::XmlData.GrpcServices.CustomerGet();
+            }
+            input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (customer_ == null) {
+              Customer = new global::XmlData.GrpcServices.CustomerGet();
+            }
+            input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PutCustomerRequest : pb::IMessage<PutCustomerRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PutCustomerRequest> _parser = new pb::MessageParser<PutCustomerRequest>(() => new PutCustomerRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PutCustomerRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PutCustomerRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PutCustomerRequest(PutCustomerRequest other) : this() {
+      customer_ = other.customer_ != null ? other.customer_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PutCustomerRequest Clone() {
+      return new PutCustomerRequest(this);
+    }
+
+    /// <summary>Field number for the "customer" field.</summary>
+    public const int CustomerFieldNumber = 1;
+    private global::XmlData.GrpcServices.CustomerUpdate customer_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::XmlData.GrpcServices.CustomerUpdate Customer {
+      get { return customer_; }
+      set {
+        customer_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PutCustomerRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PutCustomerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Customer, other.Customer)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (customer_ != null) hash ^= Customer.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (customer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Customer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (customer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Customer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (customer_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customer);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PutCustomerRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.customer_ != null) {
+        if (customer_ == null) {
+          Customer = new global::XmlData.GrpcServices.CustomerUpdate();
+        }
+        Customer.MergeFrom(other.Customer);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (customer_ == null) {
+              Customer = new global::XmlData.GrpcServices.CustomerUpdate();
+            }
+            input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (customer_ == null) {
+              Customer = new global::XmlData.GrpcServices.CustomerUpdate();
+            }
+            input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PutCustomerResponse : pb::IMessage<PutCustomerResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PutCustomerResponse> _parser = new pb::MessageParser<PutCustomerResponse>(() => new PutCustomerResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PutCustomerResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PutCustomerResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PutCustomerResponse(PutCustomerResponse other) : this() {
+      customer_ = other.customer_ != null ? other.customer_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PutCustomerResponse Clone() {
+      return new PutCustomerResponse(this);
+    }
+
+    /// <summary>Field number for the "customer" field.</summary>
+    public const int CustomerFieldNumber = 1;
+    private global::XmlData.GrpcServices.CustomerUpdate customer_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::XmlData.GrpcServices.CustomerUpdate Customer {
+      get { return customer_; }
+      set {
+        customer_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PutCustomerResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PutCustomerResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Customer, other.Customer)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (customer_ != null) hash ^= Customer.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (customer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Customer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (customer_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Customer);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (customer_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Customer);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PutCustomerResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.customer_ != null) {
+        if (customer_ == null) {
+          Customer = new global::XmlData.GrpcServices.CustomerUpdate();
+        }
+        Customer.MergeFrom(other.Customer);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (customer_ == null) {
+              Customer = new global::XmlData.GrpcServices.CustomerUpdate();
+            }
+            input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (customer_ == null) {
+              Customer = new global::XmlData.GrpcServices.CustomerUpdate();
+            }
+            input.ReadMessage(Customer);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class DeleteCustomerRequest : pb::IMessage<DeleteCustomerRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DeleteCustomerRequest> _parser = new pb::MessageParser<DeleteCustomerRequest>(() => new DeleteCustomerRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DeleteCustomerRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteCustomerRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteCustomerRequest(DeleteCustomerRequest other) : this() {
+      customerId_ = other.customerId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteCustomerRequest Clone() {
+      return new DeleteCustomerRequest(this);
+    }
+
+    /// <summary>Field number for the "customerId" field.</summary>
+    public const int CustomerIdFieldNumber = 1;
+    private string customerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DeleteCustomerRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DeleteCustomerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerId != other.CustomerId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DeleteCustomerRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerId.Length != 0) {
+        CustomerId = other.CustomerId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class DeleteCustomerResponse : pb::IMessage<DeleteCustomerResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DeleteCustomerResponse> _parser = new pb::MessageParser<DeleteCustomerResponse>(() => new DeleteCustomerResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DeleteCustomerResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteCustomerResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteCustomerResponse(DeleteCustomerResponse other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DeleteCustomerResponse Clone() {
+      return new DeleteCustomerResponse(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DeleteCustomerResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DeleteCustomerResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DeleteCustomerResponse other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CustomerGet : pb::IMessage<CustomerGet>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CustomerGet> _parser = new pb::MessageParser<CustomerGet>(() => new CustomerGet());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CustomerGet> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerGet() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerGet(CustomerGet other) : this() {
+      id_ = other.id_;
+      customerID_ = other.customerID_;
+      companyName_ = other.companyName_;
+      contactName_ = other.contactName_;
+      contactTitle_ = other.contactTitle_;
+      phone_ = other.phone_;
+      fax_ = other.fax_;
+      address_ = other.address_;
+      city_ = other.city_;
+      region_ = other.region_;
+      postalCode_ = other.postalCode_;
+      country_ = other.country_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerGet Clone() {
+      return new CustomerGet(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    /// <summary>
+    /// Guid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CustomerID" field.</summary>
+    public const int CustomerIDFieldNumber = 2;
+    private string customerID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CustomerID {
+      get { return customerID_; }
+      set {
+        customerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CompanyName" field.</summary>
+    public const int CompanyNameFieldNumber = 3;
+    private string companyName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CompanyName {
+      get { return companyName_; }
+      set {
+        companyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ContactName" field.</summary>
+    public const int ContactNameFieldNumber = 4;
+    private string contactName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ContactName {
+      get { return contactName_; }
+      set {
+        contactName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ContactTitle" field.</summary>
+    public const int ContactTitleFieldNumber = 5;
+    private string contactTitle_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ContactTitle {
+      get { return contactTitle_; }
+      set {
+        contactTitle_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Phone" field.</summary>
+    public const int PhoneFieldNumber = 6;
+    private string phone_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Phone {
+      get { return phone_; }
+      set {
+        phone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Fax" field.</summary>
+    public const int FaxFieldNumber = 7;
+    private string fax_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Fax {
+      get { return fax_; }
+      set {
+        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Address" field.</summary>
+    public const int AddressFieldNumber = 8;
+    private string address_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Address {
+      get { return address_; }
+      set {
+        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "City" field.</summary>
+    public const int CityFieldNumber = 9;
+    private string city_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string City {
+      get { return city_; }
+      set {
+        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Region" field.</summary>
+    public const int RegionFieldNumber = 10;
+    private string region_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Region {
+      get { return region_; }
+      set {
+        region_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "PostalCode" field.</summary>
+    public const int PostalCodeFieldNumber = 11;
+    private int postalCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Country" field.</summary>
+    public const int CountryFieldNumber = 12;
+    private string country_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Country {
+      get { return country_; }
+      set {
+        country_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CustomerGet);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CustomerGet other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (CustomerID != other.CustomerID) return false;
+      if (CompanyName != other.CompanyName) return false;
+      if (ContactName != other.ContactName) return false;
+      if (ContactTitle != other.ContactTitle) return false;
+      if (Phone != other.Phone) return false;
+      if (Fax != other.Fax) return false;
+      if (Address != other.Address) return false;
+      if (City != other.City) return false;
+      if (Region != other.Region) return false;
+      if (PostalCode != other.PostalCode) return false;
+      if (Country != other.Country) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (CustomerID.Length != 0) hash ^= CustomerID.GetHashCode();
+      if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
+      if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
+      if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
+      if (Phone.Length != 0) hash ^= Phone.GetHashCode();
+      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (Address.Length != 0) hash ^= Address.GetHashCode();
+      if (City.Length != 0) hash ^= City.GetHashCode();
+      if (Region.Length != 0) hash ^= Region.GetHashCode();
+      if (PostalCode != 0) hash ^= PostalCode.GetHashCode();
+      if (Country.Length != 0) hash ^= Country.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CustomerID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Phone);
+      }
+      if (Fax.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Fax);
+      }
+      if (Address.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Address);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(City);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(Region);
+      }
+      if (PostalCode != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(PostalCode);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CustomerID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Phone);
+      }
+      if (Fax.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Fax);
+      }
+      if (Address.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Address);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(City);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(Region);
+      }
+      if (PostalCode != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(PostalCode);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (CustomerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
+      }
+      if (Fax.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      }
+      if (Address.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
+      }
+      if (City.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
+      }
+      if (Region.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
+      }
+      if (PostalCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PostalCode);
+      }
+      if (Country.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CustomerGet other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.CustomerID.Length != 0) {
+        CustomerID = other.CustomerID;
+      }
+      if (other.CompanyName.Length != 0) {
+        CompanyName = other.CompanyName;
+      }
+      if (other.ContactName.Length != 0) {
+        ContactName = other.ContactName;
+      }
+      if (other.ContactTitle.Length != 0) {
+        ContactTitle = other.ContactTitle;
+      }
+      if (other.Phone.Length != 0) {
+        Phone = other.Phone;
+      }
+      if (other.Fax.Length != 0) {
+        Fax = other.Fax;
+      }
+      if (other.Address.Length != 0) {
+        Address = other.Address;
+      }
+      if (other.City.Length != 0) {
+        City = other.City;
+      }
+      if (other.Region.Length != 0) {
+        Region = other.Region;
+      }
+      if (other.PostalCode != 0) {
+        PostalCode = other.PostalCode;
+      }
+      if (other.Country.Length != 0) {
+        Country = other.Country;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CustomerID = input.ReadString();
+            break;
+          }
+          case 26: {
+            CompanyName = input.ReadString();
+            break;
+          }
+          case 34: {
+            ContactName = input.ReadString();
+            break;
+          }
+          case 42: {
+            ContactTitle = input.ReadString();
+            break;
+          }
+          case 50: {
+            Phone = input.ReadString();
+            break;
+          }
+          case 58: {
+            Fax = input.ReadString();
+            break;
+          }
+          case 66: {
+            Address = input.ReadString();
+            break;
+          }
+          case 74: {
+            City = input.ReadString();
+            break;
+          }
+          case 82: {
+            Region = input.ReadString();
+            break;
+          }
+          case 88: {
+            PostalCode = input.ReadInt32();
+            break;
+          }
+          case 98: {
+            Country = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CustomerID = input.ReadString();
+            break;
+          }
+          case 26: {
+            CompanyName = input.ReadString();
+            break;
+          }
+          case 34: {
+            ContactName = input.ReadString();
+            break;
+          }
+          case 42: {
+            ContactTitle = input.ReadString();
+            break;
+          }
+          case 50: {
+            Phone = input.ReadString();
+            break;
+          }
+          case 58: {
+            Fax = input.ReadString();
+            break;
+          }
+          case 66: {
+            Address = input.ReadString();
+            break;
+          }
+          case 74: {
+            City = input.ReadString();
+            break;
+          }
+          case 82: {
+            Region = input.ReadString();
+            break;
+          }
+          case 88: {
+            PostalCode = input.ReadInt32();
+            break;
+          }
+          case 98: {
+            Country = input.ReadString();
             break;
           }
         }
@@ -794,7 +2555,7 @@ namespace XmlData.GrpcServices {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[4]; }
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1185,6 +2946,1164 @@ namespace XmlData.GrpcServices {
           }
           case 58: {
             Fax = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CustomerCreate : pb::IMessage<CustomerCreate>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CustomerCreate> _parser = new pb::MessageParser<CustomerCreate>(() => new CustomerCreate());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CustomerCreate> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerCreate() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerCreate(CustomerCreate other) : this() {
+      customerID_ = other.customerID_;
+      companyName_ = other.companyName_;
+      contactName_ = other.contactName_;
+      contactTitle_ = other.contactTitle_;
+      phone_ = other.phone_;
+      fax_ = other.fax_;
+      address_ = other.address_;
+      city_ = other.city_;
+      region_ = other.region_;
+      postalCode_ = other.postalCode_;
+      country_ = other.country_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerCreate Clone() {
+      return new CustomerCreate(this);
+    }
+
+    /// <summary>Field number for the "CustomerID" field.</summary>
+    public const int CustomerIDFieldNumber = 1;
+    private string customerID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CustomerID {
+      get { return customerID_; }
+      set {
+        customerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CompanyName" field.</summary>
+    public const int CompanyNameFieldNumber = 2;
+    private string companyName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CompanyName {
+      get { return companyName_; }
+      set {
+        companyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ContactName" field.</summary>
+    public const int ContactNameFieldNumber = 3;
+    private string contactName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ContactName {
+      get { return contactName_; }
+      set {
+        contactName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ContactTitle" field.</summary>
+    public const int ContactTitleFieldNumber = 4;
+    private string contactTitle_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ContactTitle {
+      get { return contactTitle_; }
+      set {
+        contactTitle_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Phone" field.</summary>
+    public const int PhoneFieldNumber = 5;
+    private string phone_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Phone {
+      get { return phone_; }
+      set {
+        phone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Fax" field.</summary>
+    public const int FaxFieldNumber = 6;
+    private string fax_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Fax {
+      get { return fax_; }
+      set {
+        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Address" field.</summary>
+    public const int AddressFieldNumber = 7;
+    private string address_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Address {
+      get { return address_; }
+      set {
+        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "City" field.</summary>
+    public const int CityFieldNumber = 8;
+    private string city_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string City {
+      get { return city_; }
+      set {
+        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Region" field.</summary>
+    public const int RegionFieldNumber = 9;
+    private string region_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Region {
+      get { return region_; }
+      set {
+        region_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "PostalCode" field.</summary>
+    public const int PostalCodeFieldNumber = 10;
+    private int postalCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Country" field.</summary>
+    public const int CountryFieldNumber = 11;
+    private string country_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Country {
+      get { return country_; }
+      set {
+        country_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CustomerCreate);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CustomerCreate other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerID != other.CustomerID) return false;
+      if (CompanyName != other.CompanyName) return false;
+      if (ContactName != other.ContactName) return false;
+      if (ContactTitle != other.ContactTitle) return false;
+      if (Phone != other.Phone) return false;
+      if (Fax != other.Fax) return false;
+      if (Address != other.Address) return false;
+      if (City != other.City) return false;
+      if (Region != other.Region) return false;
+      if (PostalCode != other.PostalCode) return false;
+      if (Country != other.Country) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerID.Length != 0) hash ^= CustomerID.GetHashCode();
+      if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
+      if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
+      if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
+      if (Phone.Length != 0) hash ^= Phone.GetHashCode();
+      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (Address.Length != 0) hash ^= Address.GetHashCode();
+      if (City.Length != 0) hash ^= City.GetHashCode();
+      if (Region.Length != 0) hash ^= Region.GetHashCode();
+      if (PostalCode != 0) hash ^= PostalCode.GetHashCode();
+      if (Country.Length != 0) hash ^= Country.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CustomerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Phone);
+      }
+      if (Fax.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Fax);
+      }
+      if (Address.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Address);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(City);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Region);
+      }
+      if (PostalCode != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(PostalCode);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CustomerID.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Phone);
+      }
+      if (Fax.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Fax);
+      }
+      if (Address.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Address);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(City);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Region);
+      }
+      if (PostalCode != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(PostalCode);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
+      }
+      if (Fax.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      }
+      if (Address.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
+      }
+      if (City.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
+      }
+      if (Region.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
+      }
+      if (PostalCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PostalCode);
+      }
+      if (Country.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CustomerCreate other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerID.Length != 0) {
+        CustomerID = other.CustomerID;
+      }
+      if (other.CompanyName.Length != 0) {
+        CompanyName = other.CompanyName;
+      }
+      if (other.ContactName.Length != 0) {
+        ContactName = other.ContactName;
+      }
+      if (other.ContactTitle.Length != 0) {
+        ContactTitle = other.ContactTitle;
+      }
+      if (other.Phone.Length != 0) {
+        Phone = other.Phone;
+      }
+      if (other.Fax.Length != 0) {
+        Fax = other.Fax;
+      }
+      if (other.Address.Length != 0) {
+        Address = other.Address;
+      }
+      if (other.City.Length != 0) {
+        City = other.City;
+      }
+      if (other.Region.Length != 0) {
+        Region = other.Region;
+      }
+      if (other.PostalCode != 0) {
+        PostalCode = other.PostalCode;
+      }
+      if (other.Country.Length != 0) {
+        Country = other.Country;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerID = input.ReadString();
+            break;
+          }
+          case 18: {
+            CompanyName = input.ReadString();
+            break;
+          }
+          case 26: {
+            ContactName = input.ReadString();
+            break;
+          }
+          case 34: {
+            ContactTitle = input.ReadString();
+            break;
+          }
+          case 42: {
+            Phone = input.ReadString();
+            break;
+          }
+          case 50: {
+            Fax = input.ReadString();
+            break;
+          }
+          case 58: {
+            Address = input.ReadString();
+            break;
+          }
+          case 66: {
+            City = input.ReadString();
+            break;
+          }
+          case 74: {
+            Region = input.ReadString();
+            break;
+          }
+          case 80: {
+            PostalCode = input.ReadInt32();
+            break;
+          }
+          case 90: {
+            Country = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CustomerID = input.ReadString();
+            break;
+          }
+          case 18: {
+            CompanyName = input.ReadString();
+            break;
+          }
+          case 26: {
+            ContactName = input.ReadString();
+            break;
+          }
+          case 34: {
+            ContactTitle = input.ReadString();
+            break;
+          }
+          case 42: {
+            Phone = input.ReadString();
+            break;
+          }
+          case 50: {
+            Fax = input.ReadString();
+            break;
+          }
+          case 58: {
+            Address = input.ReadString();
+            break;
+          }
+          case 66: {
+            City = input.ReadString();
+            break;
+          }
+          case 74: {
+            Region = input.ReadString();
+            break;
+          }
+          case 80: {
+            PostalCode = input.ReadInt32();
+            break;
+          }
+          case 90: {
+            Country = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CustomerUpdate : pb::IMessage<CustomerUpdate>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CustomerUpdate> _parser = new pb::MessageParser<CustomerUpdate>(() => new CustomerUpdate());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CustomerUpdate> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerUpdate() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerUpdate(CustomerUpdate other) : this() {
+      id_ = other.id_;
+      customerID_ = other.customerID_;
+      companyName_ = other.companyName_;
+      contactName_ = other.contactName_;
+      contactTitle_ = other.contactTitle_;
+      phone_ = other.phone_;
+      fax_ = other.fax_;
+      address_ = other.address_;
+      city_ = other.city_;
+      region_ = other.region_;
+      postalCode_ = other.postalCode_;
+      country_ = other.country_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CustomerUpdate Clone() {
+      return new CustomerUpdate(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    /// <summary>
+    /// Guid
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CustomerID" field.</summary>
+    public const int CustomerIDFieldNumber = 2;
+    private string customerID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CustomerID {
+      get { return customerID_; }
+      set {
+        customerID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "CompanyName" field.</summary>
+    public const int CompanyNameFieldNumber = 3;
+    private string companyName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CompanyName {
+      get { return companyName_; }
+      set {
+        companyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ContactName" field.</summary>
+    public const int ContactNameFieldNumber = 4;
+    private string contactName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ContactName {
+      get { return contactName_; }
+      set {
+        contactName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ContactTitle" field.</summary>
+    public const int ContactTitleFieldNumber = 5;
+    private string contactTitle_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ContactTitle {
+      get { return contactTitle_; }
+      set {
+        contactTitle_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Phone" field.</summary>
+    public const int PhoneFieldNumber = 6;
+    private string phone_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Phone {
+      get { return phone_; }
+      set {
+        phone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Fax" field.</summary>
+    public const int FaxFieldNumber = 7;
+    private string fax_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Fax {
+      get { return fax_; }
+      set {
+        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Address" field.</summary>
+    public const int AddressFieldNumber = 8;
+    private string address_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Address {
+      get { return address_; }
+      set {
+        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "City" field.</summary>
+    public const int CityFieldNumber = 9;
+    private string city_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string City {
+      get { return city_; }
+      set {
+        city_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Region" field.</summary>
+    public const int RegionFieldNumber = 10;
+    private string region_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Region {
+      get { return region_; }
+      set {
+        region_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "PostalCode" field.</summary>
+    public const int PostalCodeFieldNumber = 11;
+    private int postalCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PostalCode {
+      get { return postalCode_; }
+      set {
+        postalCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Country" field.</summary>
+    public const int CountryFieldNumber = 12;
+    private string country_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Country {
+      get { return country_; }
+      set {
+        country_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CustomerUpdate);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CustomerUpdate other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (CustomerID != other.CustomerID) return false;
+      if (CompanyName != other.CompanyName) return false;
+      if (ContactName != other.ContactName) return false;
+      if (ContactTitle != other.ContactTitle) return false;
+      if (Phone != other.Phone) return false;
+      if (Fax != other.Fax) return false;
+      if (Address != other.Address) return false;
+      if (City != other.City) return false;
+      if (Region != other.Region) return false;
+      if (PostalCode != other.PostalCode) return false;
+      if (Country != other.Country) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (CustomerID.Length != 0) hash ^= CustomerID.GetHashCode();
+      if (CompanyName.Length != 0) hash ^= CompanyName.GetHashCode();
+      if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
+      if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
+      if (Phone.Length != 0) hash ^= Phone.GetHashCode();
+      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (Address.Length != 0) hash ^= Address.GetHashCode();
+      if (City.Length != 0) hash ^= City.GetHashCode();
+      if (Region.Length != 0) hash ^= Region.GetHashCode();
+      if (PostalCode != 0) hash ^= PostalCode.GetHashCode();
+      if (Country.Length != 0) hash ^= Country.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CustomerID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Phone);
+      }
+      if (Fax.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Fax);
+      }
+      if (Address.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Address);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(City);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(Region);
+      }
+      if (PostalCode != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(PostalCode);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (CustomerID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Phone);
+      }
+      if (Fax.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Fax);
+      }
+      if (Address.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Address);
+      }
+      if (City.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(City);
+      }
+      if (Region.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(Region);
+      }
+      if (PostalCode != 0) {
+        output.WriteRawTag(88);
+        output.WriteInt32(PostalCode);
+      }
+      if (Country.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(Country);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (CustomerID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerID);
+      }
+      if (CompanyName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CompanyName);
+      }
+      if (ContactName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactName);
+      }
+      if (ContactTitle.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactTitle);
+      }
+      if (Phone.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
+      }
+      if (Fax.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      }
+      if (Address.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
+      }
+      if (City.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(City);
+      }
+      if (Region.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Region);
+      }
+      if (PostalCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PostalCode);
+      }
+      if (Country.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Country);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CustomerUpdate other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.CustomerID.Length != 0) {
+        CustomerID = other.CustomerID;
+      }
+      if (other.CompanyName.Length != 0) {
+        CompanyName = other.CompanyName;
+      }
+      if (other.ContactName.Length != 0) {
+        ContactName = other.ContactName;
+      }
+      if (other.ContactTitle.Length != 0) {
+        ContactTitle = other.ContactTitle;
+      }
+      if (other.Phone.Length != 0) {
+        Phone = other.Phone;
+      }
+      if (other.Fax.Length != 0) {
+        Fax = other.Fax;
+      }
+      if (other.Address.Length != 0) {
+        Address = other.Address;
+      }
+      if (other.City.Length != 0) {
+        City = other.City;
+      }
+      if (other.Region.Length != 0) {
+        Region = other.Region;
+      }
+      if (other.PostalCode != 0) {
+        PostalCode = other.PostalCode;
+      }
+      if (other.Country.Length != 0) {
+        Country = other.Country;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CustomerID = input.ReadString();
+            break;
+          }
+          case 26: {
+            CompanyName = input.ReadString();
+            break;
+          }
+          case 34: {
+            ContactName = input.ReadString();
+            break;
+          }
+          case 42: {
+            ContactTitle = input.ReadString();
+            break;
+          }
+          case 50: {
+            Phone = input.ReadString();
+            break;
+          }
+          case 58: {
+            Fax = input.ReadString();
+            break;
+          }
+          case 66: {
+            Address = input.ReadString();
+            break;
+          }
+          case 74: {
+            City = input.ReadString();
+            break;
+          }
+          case 82: {
+            Region = input.ReadString();
+            break;
+          }
+          case 88: {
+            PostalCode = input.ReadInt32();
+            break;
+          }
+          case 98: {
+            Country = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            CustomerID = input.ReadString();
+            break;
+          }
+          case 26: {
+            CompanyName = input.ReadString();
+            break;
+          }
+          case 34: {
+            ContactName = input.ReadString();
+            break;
+          }
+          case 42: {
+            ContactTitle = input.ReadString();
+            break;
+          }
+          case 50: {
+            Phone = input.ReadString();
+            break;
+          }
+          case 58: {
+            Fax = input.ReadString();
+            break;
+          }
+          case 66: {
+            Address = input.ReadString();
+            break;
+          }
+          case 74: {
+            City = input.ReadString();
+            break;
+          }
+          case 82: {
+            Region = input.ReadString();
+            break;
+          }
+          case 88: {
+            PostalCode = input.ReadInt32();
+            break;
+          }
+          case 98: {
+            Country = input.ReadString();
             break;
           }
         }

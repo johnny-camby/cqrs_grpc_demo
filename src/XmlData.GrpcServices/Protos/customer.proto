@@ -6,7 +6,10 @@ package XmlDataGrpcServices;
 
 service CustomerData {
 	rpc GetCustomers (CustomersRequest) returns (CustomersResponse);
-	rpc CreateNew(CreateCustomerRequest) returns (CreateCustomerResponse);
+	rpc GetCustomerById (GetCustomerByIdRequest) returns (GetCustomerByIdResponse);
+	rpc CreateNew (CreateCustomerRequest) returns (CreateCustomerResponse);
+	rpc PutCustomer (PutCustomerRequest) returns (PutCustomerResponse);
+	rpc DeleteCustomer (DeleteCustomerRequest) returns (DeleteCustomerResponse);
 }
 
 message CustomersRequest {}
@@ -16,12 +19,43 @@ message CustomersResponse {
 }
 
 message CreateCustomerRequest {
-	CustomerListVm customer  = 1;
+	CustomerCreate customer  = 1;
+}
+message CreateCustomerResponse {
+	CustomerCreate customer  = 1;
+}
+message GetCustomerByIdRequest {
+	string customerId = 1;
+}
+message GetCustomerByIdResponse {
+    CustomerGet customer = 1;
+}
+message PutCustomerRequest {
+    CustomerUpdate customer = 1;
+}
+message PutCustomerResponse {
+    CustomerUpdate customer = 1;
+}
+message DeleteCustomerRequest {
+	string customerId = 1;
+}
+message DeleteCustomerResponse {}
+
+message CustomerGet  {
+    string Id = 1; // Guid
+    string CustomerID = 2;
+    string CompanyName = 3;
+    string ContactName = 4;
+    string ContactTitle = 5;
+    string Phone = 6;
+    string Fax = 7;
+    string Address = 8;
+    string City = 9;
+    string Region = 10;
+    int32  PostalCode = 11;
+    string Country = 12;
 }
 
-message CreateCustomerResponse {
-	CustomerListVm customer  = 1;
-}
 
 message CustomerListVm {
 	string Id = 1; // Guid
@@ -31,4 +65,33 @@ message CustomerListVm {
     string ContactTitle = 5;
     string Phone = 6;
     string Fax = 7;
+}
+
+message CustomerCreate  {
+    string CustomerID = 1;
+    string CompanyName = 2;
+    string ContactName = 3;
+    string ContactTitle = 4;
+    string Phone = 5;
+    string Fax = 6;
+    string Address = 7;
+    string City = 8;
+    string Region = 9;
+    int32  PostalCode = 10;
+    string Country = 11;
+}
+
+message CustomerUpdate  {
+    string Id = 1; // Guid
+    string CustomerID = 2;
+    string CompanyName = 3;
+    string ContactName = 4;
+    string ContactTitle = 5;
+    string Phone = 6;
+    string Fax = 7;
+    string Address = 8;
+    string City = 9;
+    string Region = 10;
+    int32  PostalCode = 11;
+    string Country = 12;
 }

@@ -50,9 +50,21 @@ namespace XmlData.GrpcServices {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::XmlData.GrpcServices.CustomersResponse> __Marshaller_XmlDataGrpcServices_CustomersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.CustomersResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::XmlData.GrpcServices.GetCustomerByIdRequest> __Marshaller_XmlDataGrpcServices_GetCustomerByIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.GetCustomerByIdRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::XmlData.GrpcServices.GetCustomerByIdResponse> __Marshaller_XmlDataGrpcServices_GetCustomerByIdResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.GetCustomerByIdResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::XmlData.GrpcServices.CreateCustomerRequest> __Marshaller_XmlDataGrpcServices_CreateCustomerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.CreateCustomerRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::XmlData.GrpcServices.CreateCustomerResponse> __Marshaller_XmlDataGrpcServices_CreateCustomerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.CreateCustomerResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::XmlData.GrpcServices.PutCustomerRequest> __Marshaller_XmlDataGrpcServices_PutCustomerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.PutCustomerRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::XmlData.GrpcServices.PutCustomerResponse> __Marshaller_XmlDataGrpcServices_PutCustomerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.PutCustomerResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::XmlData.GrpcServices.DeleteCustomerRequest> __Marshaller_XmlDataGrpcServices_DeleteCustomerRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.DeleteCustomerRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::XmlData.GrpcServices.DeleteCustomerResponse> __Marshaller_XmlDataGrpcServices_DeleteCustomerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::XmlData.GrpcServices.DeleteCustomerResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::XmlData.GrpcServices.CustomersRequest, global::XmlData.GrpcServices.CustomersResponse> __Method_GetCustomers = new grpc::Method<global::XmlData.GrpcServices.CustomersRequest, global::XmlData.GrpcServices.CustomersResponse>(
@@ -63,12 +75,36 @@ namespace XmlData.GrpcServices {
         __Marshaller_XmlDataGrpcServices_CustomersResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::XmlData.GrpcServices.GetCustomerByIdRequest, global::XmlData.GrpcServices.GetCustomerByIdResponse> __Method_GetCustomerById = new grpc::Method<global::XmlData.GrpcServices.GetCustomerByIdRequest, global::XmlData.GrpcServices.GetCustomerByIdResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCustomerById",
+        __Marshaller_XmlDataGrpcServices_GetCustomerByIdRequest,
+        __Marshaller_XmlDataGrpcServices_GetCustomerByIdResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::XmlData.GrpcServices.CreateCustomerRequest, global::XmlData.GrpcServices.CreateCustomerResponse> __Method_CreateNew = new grpc::Method<global::XmlData.GrpcServices.CreateCustomerRequest, global::XmlData.GrpcServices.CreateCustomerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateNew",
         __Marshaller_XmlDataGrpcServices_CreateCustomerRequest,
         __Marshaller_XmlDataGrpcServices_CreateCustomerResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::XmlData.GrpcServices.PutCustomerRequest, global::XmlData.GrpcServices.PutCustomerResponse> __Method_PutCustomer = new grpc::Method<global::XmlData.GrpcServices.PutCustomerRequest, global::XmlData.GrpcServices.PutCustomerResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PutCustomer",
+        __Marshaller_XmlDataGrpcServices_PutCustomerRequest,
+        __Marshaller_XmlDataGrpcServices_PutCustomerResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::XmlData.GrpcServices.DeleteCustomerRequest, global::XmlData.GrpcServices.DeleteCustomerResponse> __Method_DeleteCustomer = new grpc::Method<global::XmlData.GrpcServices.DeleteCustomerRequest, global::XmlData.GrpcServices.DeleteCustomerResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteCustomer",
+        __Marshaller_XmlDataGrpcServices_DeleteCustomerRequest,
+        __Marshaller_XmlDataGrpcServices_DeleteCustomerResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -87,7 +123,25 @@ namespace XmlData.GrpcServices {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::XmlData.GrpcServices.GetCustomerByIdResponse> GetCustomerById(global::XmlData.GrpcServices.GetCustomerByIdRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::XmlData.GrpcServices.CreateCustomerResponse> CreateNew(global::XmlData.GrpcServices.CreateCustomerRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::XmlData.GrpcServices.PutCustomerResponse> PutCustomer(global::XmlData.GrpcServices.PutCustomerRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::XmlData.GrpcServices.DeleteCustomerResponse> DeleteCustomer(global::XmlData.GrpcServices.DeleteCustomerRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -101,7 +155,10 @@ namespace XmlData.GrpcServices {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetCustomers, serviceImpl.GetCustomers)
-          .AddMethod(__Method_CreateNew, serviceImpl.CreateNew).Build();
+          .AddMethod(__Method_GetCustomerById, serviceImpl.GetCustomerById)
+          .AddMethod(__Method_CreateNew, serviceImpl.CreateNew)
+          .AddMethod(__Method_PutCustomer, serviceImpl.PutCustomer)
+          .AddMethod(__Method_DeleteCustomer, serviceImpl.DeleteCustomer).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -112,7 +169,10 @@ namespace XmlData.GrpcServices {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, CustomerDataBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetCustomers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::XmlData.GrpcServices.CustomersRequest, global::XmlData.GrpcServices.CustomersResponse>(serviceImpl.GetCustomers));
+      serviceBinder.AddMethod(__Method_GetCustomerById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::XmlData.GrpcServices.GetCustomerByIdRequest, global::XmlData.GrpcServices.GetCustomerByIdResponse>(serviceImpl.GetCustomerById));
       serviceBinder.AddMethod(__Method_CreateNew, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::XmlData.GrpcServices.CreateCustomerRequest, global::XmlData.GrpcServices.CreateCustomerResponse>(serviceImpl.CreateNew));
+      serviceBinder.AddMethod(__Method_PutCustomer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::XmlData.GrpcServices.PutCustomerRequest, global::XmlData.GrpcServices.PutCustomerResponse>(serviceImpl.PutCustomer));
+      serviceBinder.AddMethod(__Method_DeleteCustomer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::XmlData.GrpcServices.DeleteCustomerRequest, global::XmlData.GrpcServices.DeleteCustomerResponse>(serviceImpl.DeleteCustomer));
     }
 
   }

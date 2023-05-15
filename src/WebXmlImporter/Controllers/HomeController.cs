@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.CQRS.FileUpload.Commands.Import;
+using Google.Protobuf;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -11,7 +12,7 @@ namespace WebXmlImporter.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly CustomerDataClient  _client;
+        private readonly  CustomerDataClient _client;
         private readonly IMediator _mediator;
 
         public HomeController(ILogger<HomeController> logger,
@@ -30,12 +31,12 @@ namespace WebXmlImporter.Controllers
 
             try
             {
-                data = await _client.GetCustomersAsync(new CustomersRequest());
+                 data = await _client.GetCustomersAsync(new CustomersRequest());
             }
-            catch(Exception ex )
+            catch (Exception ex)
             {
                 _logger.LogError($"error {ex.Message}");
-            }           
+            }
 
             return View(data.Customers);
         }
@@ -58,7 +59,7 @@ namespace WebXmlImporter.Controllers
         {
             CreateCustomerResponse? createCustomerResponse = null;
 
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 createCustomerResponse = await _client.CreateNewAsync(createCustomerRequest);
                 return RedirectToAction(nameof(Index));
@@ -69,14 +70,14 @@ namespace WebXmlImporter.Controllers
 
         public async Task<IActionResult> Edit(Guid id)
         {
-            if(id == default)
+            if (id == default)
             {
                 return NotFound();
             }
 
             var customer = await _client.GetCustomerByIdAsync(new GetCustomerByIdRequest { CustomerId = id.ToString() });
-            
-            if(customer == null)
+
+            if (customer == null)
             {
                 return NotFound();
             }
@@ -84,11 +85,11 @@ namespace WebXmlImporter.Controllers
             return View(customer);
         }
 
-        [HttpPost , ActionName("Edit")]
+        [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditPost(Guid id, PutCustomerRequest putCustomerRequest)
         {
-            if(id == default)
+            if (id == default)
             {
                 return NotFound();
             }
@@ -105,7 +106,7 @@ namespace WebXmlImporter.Controllers
 
         public async Task<IActionResult> Delete(Guid id)
         {
-            if(id == default)
+            if (id == default)
             {
                 return NotFound();
             }
@@ -128,7 +129,6 @@ namespace WebXmlImporter.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
         [HttpPost]
         public async Task<IActionResult> UploadXmlAsync([FromForm] FileUploadCommandRequest content)
         {
@@ -141,12 +141,116 @@ namespace WebXmlImporter.Controllers
                 }
                 catch (Exception ex)
                 {
-                    //Log
+                    _logger.LogError($"Error Uploading file: {ex.Message}");
                 }
+
+
+                //try
+                //{
+                //    
+                //    //using FileStream fs = await ProcessFileStream(content);
+
+                //    //string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles"));
+                //    //if (!Directory.Exists(path))
+                //    //{
+                //    //    Directory.CreateDirectory(path);
+                //    //}
+                //    //using (var fileStream = new FileStream(Path.Combine(path, file.FileName), FileMode.Create))
+                //    //{
+                //    //    await file.CopyToAsync(fileStream);
+                //    //}
+                //    //var filePath = Path.Combine(path, file.FileName);
+
+
+                //    string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles"));
+                //    if (!Directory.Exists(path))
+                //    {
+                //        Directory.CreateDirectory(path);
+                //    }
+
+                //    Metadata md = new Metadata();
+                //    var filePath = Path.Combine(path, content.File.FileName);
+                //    //FileStream fs = System.IO.File.OpenRead(filePath);
+
+                //    using var fs = new FileStream(Path.Combine(path, content.File.FileName), FileMode.Create);
+
+                //    using var call = _client.UploadXml(md);
+                //    var stream = call.RequestStream;
+
+                //    while (true)
+                //    {
+                //        byte[] buffer = new byte[64 * 1024];
+                //        int numRead = await fs.ReadAsync(buffer, 0, buffer.Length);
+
+                //        if (numRead == 0)
+                //        {
+                //            break;
+                //        }
+
+                //        if (numRead < buffer.Length)
+                //        {
+                //            Array.Resize(ref buffer, numRead);
+                //        }
+
+                //        await stream.WriteAsync(new UploadXmlRequest
+                //        {
+                //            Data = ByteString.CopyFrom(buffer),
+                //            Metadata = new FileMetadata
+                //            {
+                //                FileName = content.File.FileName,
+                //                FilePath = filePath,
+                //            }
+                //        });
+                //    }
+                //    await stream.CompleteAsync();
+                //    await call;                   
+                //}
+                //catch (Exception ex)
+                //{
+                //    //Log
+                //}
+
             }
             return RedirectToAction(nameof(Index));
         }
 
+        private async Task<FileStream> ProcessFileStream(FileUploadCommandRequest content)
+        {
+            var call = _client.UploadXml();
+            await call.RequestStream.WriteAsync(new UploadXmlRequest
+            {
+                Metadata = new FileMetadata
+                {
+                    FileName = content.File.FileName
+                }
+            });
+
+            byte[] buffer = new byte[64 * 1024];
+            var fs = System.IO.File.OpenRead(content.File.FileName);
+            // await using var fs = new FileStream(content.File.FileName, FileMode.Open, FileAccess.Read);
+
+            while (true)
+            {
+                var count = await fs.ReadAsync(buffer, 0, buffer.Length);
+                if (count == 0)
+                {
+                    break;
+                }
+
+                if (count < buffer.Length)
+                {
+                    Array.Resize(ref buffer, count);
+                }
+
+                await call.RequestStream.WriteAsync(new UploadXmlRequest
+                {
+                    Data = UnsafeByteOperations.UnsafeWrap(buffer.AsMemory(0, count))
+                });
+            }
+            await call.RequestStream.CompleteAsync();
+            await call;
+            return fs;
+        }
 
         public IActionResult Privacy()
         {

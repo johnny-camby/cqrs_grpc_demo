@@ -3,7 +3,7 @@ using WebXmlImporter;
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder
-    .ConfigureServices()
+    .ConfigureServices(builder.Configuration)
     .ConfigurePipeline();
 await app.ResetDatabaseAsync();
 

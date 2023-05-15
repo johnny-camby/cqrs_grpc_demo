@@ -24,54 +24,59 @@ namespace XmlData.GrpcServices {
     static CustomerReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVQcm90b3MvY3VzdG9tZXIucHJvdG8SE1htbERhdGFHcnBjU2VydmljZXMi",
-            "EgoQQ3VzdG9tZXJzUmVxdWVzdCJLChFDdXN0b21lcnNSZXNwb25zZRI2Cglj",
-            "dXN0b21lcnMYASADKAsyIy5YbWxEYXRhR3JwY1NlcnZpY2VzLkN1c3RvbWVy",
-            "TGlzdFZtIk4KFUNyZWF0ZUN1c3RvbWVyUmVxdWVzdBI1CghjdXN0b21lchgB",
-            "IAEoCzIjLlhtbERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJDcmVhdGUiTwoW",
-            "Q3JlYXRlQ3VzdG9tZXJSZXNwb25zZRI1CghjdXN0b21lchgBIAEoCzIjLlht",
-            "bERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJDcmVhdGUiLAoWR2V0Q3VzdG9t",
-            "ZXJCeUlkUmVxdWVzdBISCgpjdXN0b21lcklkGAEgASgJIk0KF0dldEN1c3Rv",
-            "bWVyQnlJZFJlc3BvbnNlEjIKCGN1c3RvbWVyGAEgASgLMiAuWG1sRGF0YUdy",
-            "cGNTZXJ2aWNlcy5DdXN0b21lckdldCJLChJQdXRDdXN0b21lclJlcXVlc3QS",
-            "NQoIY3VzdG9tZXIYASABKAsyIy5YbWxEYXRhR3JwY1NlcnZpY2VzLkN1c3Rv",
-            "bWVyVXBkYXRlIkwKE1B1dEN1c3RvbWVyUmVzcG9uc2USNQoIY3VzdG9tZXIY",
-            "ASABKAsyIy5YbWxEYXRhR3JwY1NlcnZpY2VzLkN1c3RvbWVyVXBkYXRlIisK",
-            "FURlbGV0ZUN1c3RvbWVyUmVxdWVzdBISCgpjdXN0b21lcklkGAEgASgJIhgK",
-            "FkRlbGV0ZUN1c3RvbWVyUmVzcG9uc2Ui3QEKC0N1c3RvbWVyR2V0EgoKAklk",
-            "GAEgASgJEhIKCkN1c3RvbWVySUQYAiABKAkSEwoLQ29tcGFueU5hbWUYAyAB",
-            "KAkSEwoLQ29udGFjdE5hbWUYBCABKAkSFAoMQ29udGFjdFRpdGxlGAUgASgJ",
-            "Eg0KBVBob25lGAYgASgJEgsKA0ZheBgHIAEoCRIPCgdBZGRyZXNzGAggASgJ",
-            "EgwKBENpdHkYCSABKAkSDgoGUmVnaW9uGAogASgJEhIKClBvc3RhbENvZGUY",
-            "CyABKAUSDwoHQ291bnRyeRgMIAEoCSKMAQoOQ3VzdG9tZXJMaXN0Vm0SCgoC",
-            "SWQYASABKAkSEgoKQ3VzdG9tZXJJRBgCIAEoCRITCgtDb21wYW55TmFtZRgD",
-            "IAEoCRITCgtDb250YWN0TmFtZRgEIAEoCRIUCgxDb250YWN0VGl0bGUYBSAB",
-            "KAkSDQoFUGhvbmUYBiABKAkSCwoDRmF4GAcgASgJItQBCg5DdXN0b21lckNy",
-            "ZWF0ZRISCgpDdXN0b21lcklEGAEgASgJEhMKC0NvbXBhbnlOYW1lGAIgASgJ",
-            "EhMKC0NvbnRhY3ROYW1lGAMgASgJEhQKDENvbnRhY3RUaXRsZRgEIAEoCRIN",
-            "CgVQaG9uZRgFIAEoCRILCgNGYXgYBiABKAkSDwoHQWRkcmVzcxgHIAEoCRIM",
-            "CgRDaXR5GAggASgJEg4KBlJlZ2lvbhgJIAEoCRISCgpQb3N0YWxDb2RlGAog",
-            "ASgFEg8KB0NvdW50cnkYCyABKAki4AEKDkN1c3RvbWVyVXBkYXRlEgoKAklk",
-            "GAEgASgJEhIKCkN1c3RvbWVySUQYAiABKAkSEwoLQ29tcGFueU5hbWUYAyAB",
-            "KAkSEwoLQ29udGFjdE5hbWUYBCABKAkSFAoMQ29udGFjdFRpdGxlGAUgASgJ",
-            "Eg0KBVBob25lGAYgASgJEgsKA0ZheBgHIAEoCRIPCgdBZGRyZXNzGAggASgJ",
-            "EgwKBENpdHkYCSABKAkSDgoGUmVnaW9uGAogASgJEhIKClBvc3RhbENvZGUY",
-            "CyABKAUSDwoHQ291bnRyeRgMIAEoCTKOBAoMQ3VzdG9tZXJEYXRhEl0KDEdl",
-            "dEN1c3RvbWVycxIlLlhtbERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJzUmVx",
-            "dWVzdBomLlhtbERhdGFHcnBjU2VydmljZXMuQ3VzdG9tZXJzUmVzcG9uc2US",
-            "bAoPR2V0Q3VzdG9tZXJCeUlkEisuWG1sRGF0YUdycGNTZXJ2aWNlcy5HZXRD",
-            "dXN0b21lckJ5SWRSZXF1ZXN0GiwuWG1sRGF0YUdycGNTZXJ2aWNlcy5HZXRD",
-            "dXN0b21lckJ5SWRSZXNwb25zZRJkCglDcmVhdGVOZXcSKi5YbWxEYXRhR3Jw",
-            "Y1NlcnZpY2VzLkNyZWF0ZUN1c3RvbWVyUmVxdWVzdBorLlhtbERhdGFHcnBj",
-            "U2VydmljZXMuQ3JlYXRlQ3VzdG9tZXJSZXNwb25zZRJgCgtQdXRDdXN0b21l",
-            "chInLlhtbERhdGFHcnBjU2VydmljZXMuUHV0Q3VzdG9tZXJSZXF1ZXN0Gigu",
-            "WG1sRGF0YUdycGNTZXJ2aWNlcy5QdXRDdXN0b21lclJlc3BvbnNlEmkKDkRl",
-            "bGV0ZUN1c3RvbWVyEiouWG1sRGF0YUdycGNTZXJ2aWNlcy5EZWxldGVDdXN0",
-            "b21lclJlcXVlc3QaKy5YbWxEYXRhR3JwY1NlcnZpY2VzLkRlbGV0ZUN1c3Rv",
-            "bWVyUmVzcG9uc2VCF6oCFFhtbERhdGEuR3JwY1NlcnZpY2VzYgZwcm90bzM="));
+            "ChVQcm90b3MvY3VzdG9tZXIucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFw",
+            "cGVycy5wcm90byISChBDdXN0b21lcnNSZXF1ZXN0IjcKEUN1c3RvbWVyc1Jl",
+            "c3BvbnNlEiIKCWN1c3RvbWVycxgBIAMoCzIPLkN1c3RvbWVyTGlzdFZtIjoK",
+            "FUNyZWF0ZUN1c3RvbWVyUmVxdWVzdBIhCghjdXN0b21lchgBIAEoCzIPLkN1",
+            "c3RvbWVyQ3JlYXRlIjsKFkNyZWF0ZUN1c3RvbWVyUmVzcG9uc2USIQoIY3Vz",
+            "dG9tZXIYASABKAsyDy5DdXN0b21lckNyZWF0ZSIsChZHZXRDdXN0b21lckJ5",
+            "SWRSZXF1ZXN0EhIKCmN1c3RvbWVySWQYASABKAkiOQoXR2V0Q3VzdG9tZXJC",
+            "eUlkUmVzcG9uc2USHgoIY3VzdG9tZXIYASABKAsyDC5DdXN0b21lckdldCI3",
+            "ChJQdXRDdXN0b21lclJlcXVlc3QSIQoIY3VzdG9tZXIYASABKAsyDy5DdXN0",
+            "b21lclVwZGF0ZSI4ChNQdXRDdXN0b21lclJlc3BvbnNlEiEKCGN1c3RvbWVy",
+            "GAEgASgLMg8uQ3VzdG9tZXJVcGRhdGUiKwoVRGVsZXRlQ3VzdG9tZXJSZXF1",
+            "ZXN0EhIKCmN1c3RvbWVySWQYASABKAkiGAoWRGVsZXRlQ3VzdG9tZXJSZXNw",
+            "b25zZSIVChNTYXZlQ3VzdG9tZXJSZXF1ZXN0IicKFFNhdmVDdXN0b21lclJl",
+            "c3BvbnNlEg8KB3N1Y2Nlc3MYASABKAgiQQoQVXBsb2FkWG1sUmVxdWVzdBIf",
+            "CghtZXRhZGF0YRgBIAEoCzINLkZpbGVNZXRhZGF0YRIMCgRkYXRhGAIgASgM",
+            "IjIKDEZpbGVNZXRhZGF0YRIQCghmaWxlTmFtZRgBIAEoCRIQCghmaWxlUGF0",
+            "aBgCIAEoCSIhChFVcGxvYWRYbWxSZXNwb25zZRIMCgRpc09rGAEgASgIIvsB",
+            "CgtDdXN0b21lckdldBIKCgJJZBgBIAEoCRISCgpDdXN0b21lcklEGAIgASgJ",
+            "EhMKC0NvbXBhbnlOYW1lGAMgASgJEhMKC0NvbnRhY3ROYW1lGAQgASgJEhQK",
+            "DENvbnRhY3RUaXRsZRgFIAEoCRINCgVQaG9uZRgGIAEoCRIpCgNGYXgYByAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSDwoHQWRkcmVzcxgI",
+            "IAEoCRIMCgRDaXR5GAkgASgJEg4KBlJlZ2lvbhgKIAEoCRISCgpQb3N0YWxD",
+            "b2RlGAsgASgFEg8KB0NvdW50cnkYDCABKAkiqgEKDkN1c3RvbWVyTGlzdFZt",
+            "EgoKAklkGAEgASgJEhIKCkN1c3RvbWVySUQYAiABKAkSEwoLQ29tcGFueU5h",
+            "bWUYAyABKAkSEwoLQ29udGFjdE5hbWUYBCABKAkSFAoMQ29udGFjdFRpdGxl",
+            "GAUgASgJEg0KBVBob25lGAYgASgJEikKA0ZheBgHIAEoCzIcLmdvb2dsZS5w",
+            "cm90b2J1Zi5TdHJpbmdWYWx1ZSLyAQoOQ3VzdG9tZXJDcmVhdGUSEgoKQ3Vz",
+            "dG9tZXJJRBgBIAEoCRITCgtDb21wYW55TmFtZRgCIAEoCRITCgtDb250YWN0",
+            "TmFtZRgDIAEoCRIUCgxDb250YWN0VGl0bGUYBCABKAkSDQoFUGhvbmUYBSAB",
+            "KAkSKQoDRmF4GAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVl",
+            "Eg8KB0FkZHJlc3MYByABKAkSDAoEQ2l0eRgIIAEoCRIOCgZSZWdpb24YCSAB",
+            "KAkSEgoKUG9zdGFsQ29kZRgKIAEoBRIPCgdDb3VudHJ5GAsgASgJIv4BCg5D",
+            "dXN0b21lclVwZGF0ZRIKCgJJZBgBIAEoCRISCgpDdXN0b21lcklEGAIgASgJ",
+            "EhMKC0NvbXBhbnlOYW1lGAMgASgJEhMKC0NvbnRhY3ROYW1lGAQgASgJEhQK",
+            "DENvbnRhY3RUaXRsZRgFIAEoCRINCgVQaG9uZRgGIAEoCRIpCgNGYXgYByAB",
+            "KAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSDwoHQWRkcmVzcxgI",
+            "IAEoCRIMCgRDaXR5GAkgASgJEg4KBlJlZ2lvbhgKIAEoCRISCgpQb3N0YWxD",
+            "b2RlGAsgASgFEg8KB0NvdW50cnkYDCABKAkqNgoNUHJvY2Vzc1N0YXR1cxIL",
+            "CgdVbmtub3duEAASCwoHU3VjY2VzcxABEgsKB0ZhaWx1cmUQAjK5AwoMQ3Vz",
+            "dG9tZXJEYXRhEjUKDEdldEN1c3RvbWVycxIRLkN1c3RvbWVyc1JlcXVlc3Qa",
+            "Ei5DdXN0b21lcnNSZXNwb25zZRJECg9HZXRDdXN0b21lckJ5SWQSFy5HZXRD",
+            "dXN0b21lckJ5SWRSZXF1ZXN0GhguR2V0Q3VzdG9tZXJCeUlkUmVzcG9uc2US",
+            "PAoJQ3JlYXRlTmV3EhYuQ3JlYXRlQ3VzdG9tZXJSZXF1ZXN0GhcuQ3JlYXRl",
+            "Q3VzdG9tZXJSZXNwb25zZRI4CgtQdXRDdXN0b21lchITLlB1dEN1c3RvbWVy",
+            "UmVxdWVzdBoULlB1dEN1c3RvbWVyUmVzcG9uc2USQQoORGVsZXRlQ3VzdG9t",
+            "ZXISFi5EZWxldGVDdXN0b21lclJlcXVlc3QaFy5EZWxldGVDdXN0b21lclJl",
+            "c3BvbnNlEjsKDFNhdmVDdXN0b21lchIULlNhdmVDdXN0b21lclJlcXVlc3Qa",
+            "FS5TYXZlQ3VzdG9tZXJSZXNwb25zZRI0CglVcGxvYWRYbWwSES5VcGxvYWRY",
+            "bWxSZXF1ZXN0GhIuVXBsb2FkWG1sUmVzcG9uc2UoAUIXqgIUWG1sRGF0YS5H",
+            "cnBjU2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::XmlData.GrpcServices.ProcessStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomersRequest), global::XmlData.GrpcServices.CustomersRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomersResponse), global::XmlData.GrpcServices.CustomersResponse.Parser, new[]{ "Customers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CreateCustomerRequest), global::XmlData.GrpcServices.CreateCustomerRequest.Parser, new[]{ "Customer" }, null, null, null, null),
@@ -82,6 +87,11 @@ namespace XmlData.GrpcServices {
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.PutCustomerResponse), global::XmlData.GrpcServices.PutCustomerResponse.Parser, new[]{ "Customer" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.DeleteCustomerRequest), global::XmlData.GrpcServices.DeleteCustomerRequest.Parser, new[]{ "CustomerId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.DeleteCustomerResponse), global::XmlData.GrpcServices.DeleteCustomerResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.SaveCustomerRequest), global::XmlData.GrpcServices.SaveCustomerRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.SaveCustomerResponse), global::XmlData.GrpcServices.SaveCustomerResponse.Parser, new[]{ "Success" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.UploadXmlRequest), global::XmlData.GrpcServices.UploadXmlRequest.Parser, new[]{ "Metadata", "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.FileMetadata), global::XmlData.GrpcServices.FileMetadata.Parser, new[]{ "FileName", "FilePath" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.UploadXmlResponse), global::XmlData.GrpcServices.UploadXmlResponse.Parser, new[]{ "IsOk" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerGet), global::XmlData.GrpcServices.CustomerGet.Parser, new[]{ "Id", "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerListVm), global::XmlData.GrpcServices.CustomerListVm.Parser, new[]{ "Id", "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XmlData.GrpcServices.CustomerCreate), global::XmlData.GrpcServices.CustomerCreate.Parser, new[]{ "CustomerID", "CompanyName", "ContactName", "ContactTitle", "Phone", "Fax", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null),
@@ -91,6 +101,15 @@ namespace XmlData.GrpcServices {
     #endregion
 
   }
+  #region Enums
+  public enum ProcessStatus {
+    [pbr::OriginalName("Unknown")] Unknown = 0,
+    [pbr::OriginalName("Success")] Success = 1,
+    [pbr::OriginalName("Failure")] Failure = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class CustomersRequest : pb::IMessage<CustomersRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1942,6 +1961,997 @@ namespace XmlData.GrpcServices {
 
   }
 
+  public sealed partial class SaveCustomerRequest : pb::IMessage<SaveCustomerRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SaveCustomerRequest> _parser = new pb::MessageParser<SaveCustomerRequest>(() => new SaveCustomerRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SaveCustomerRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SaveCustomerRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SaveCustomerRequest(SaveCustomerRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SaveCustomerRequest Clone() {
+      return new SaveCustomerRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SaveCustomerRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SaveCustomerRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SaveCustomerRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class SaveCustomerResponse : pb::IMessage<SaveCustomerResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SaveCustomerResponse> _parser = new pb::MessageParser<SaveCustomerResponse>(() => new SaveCustomerResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SaveCustomerResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SaveCustomerResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SaveCustomerResponse(SaveCustomerResponse other) : this() {
+      success_ = other.success_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SaveCustomerResponse Clone() {
+      return new SaveCustomerResponse(this);
+    }
+
+    /// <summary>Field number for the "success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SaveCustomerResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SaveCustomerResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SaveCustomerResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class UploadXmlRequest : pb::IMessage<UploadXmlRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UploadXmlRequest> _parser = new pb::MessageParser<UploadXmlRequest>(() => new UploadXmlRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UploadXmlRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UploadXmlRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UploadXmlRequest(UploadXmlRequest other) : this() {
+      metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
+      data_ = other.data_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UploadXmlRequest Clone() {
+      return new UploadXmlRequest(this);
+    }
+
+    /// <summary>Field number for the "metadata" field.</summary>
+    public const int MetadataFieldNumber = 1;
+    private global::XmlData.GrpcServices.FileMetadata metadata_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::XmlData.GrpcServices.FileMetadata Metadata {
+      get { return metadata_; }
+      set {
+        metadata_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "data" field.</summary>
+    public const int DataFieldNumber = 2;
+    private pb::ByteString data_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Data {
+      get { return data_; }
+      set {
+        data_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UploadXmlRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UploadXmlRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Metadata, other.Metadata)) return false;
+      if (Data != other.Data) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (metadata_ != null) hash ^= Metadata.GetHashCode();
+      if (Data.Length != 0) hash ^= Data.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (metadata_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Metadata);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(Data);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (metadata_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Metadata);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteBytes(Data);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (metadata_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
+      }
+      if (Data.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UploadXmlRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.metadata_ != null) {
+        if (metadata_ == null) {
+          Metadata = new global::XmlData.GrpcServices.FileMetadata();
+        }
+        Metadata.MergeFrom(other.Metadata);
+      }
+      if (other.Data.Length != 0) {
+        Data = other.Data;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (metadata_ == null) {
+              Metadata = new global::XmlData.GrpcServices.FileMetadata();
+            }
+            input.ReadMessage(Metadata);
+            break;
+          }
+          case 18: {
+            Data = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (metadata_ == null) {
+              Metadata = new global::XmlData.GrpcServices.FileMetadata();
+            }
+            input.ReadMessage(Metadata);
+            break;
+          }
+          case 18: {
+            Data = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class FileMetadata : pb::IMessage<FileMetadata>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<FileMetadata> _parser = new pb::MessageParser<FileMetadata>(() => new FileMetadata());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<FileMetadata> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public FileMetadata() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public FileMetadata(FileMetadata other) : this() {
+      fileName_ = other.fileName_;
+      filePath_ = other.filePath_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public FileMetadata Clone() {
+      return new FileMetadata(this);
+    }
+
+    /// <summary>Field number for the "fileName" field.</summary>
+    public const int FileNameFieldNumber = 1;
+    private string fileName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FileName {
+      get { return fileName_; }
+      set {
+        fileName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "filePath" field.</summary>
+    public const int FilePathFieldNumber = 2;
+    private string filePath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FilePath {
+      get { return filePath_; }
+      set {
+        filePath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as FileMetadata);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(FileMetadata other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (FileName != other.FileName) return false;
+      if (FilePath != other.FilePath) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (FileName.Length != 0) hash ^= FileName.GetHashCode();
+      if (FilePath.Length != 0) hash ^= FilePath.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (FileName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(FileName);
+      }
+      if (FilePath.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(FilePath);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (FileName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(FileName);
+      }
+      if (FilePath.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(FilePath);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (FileName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FileName);
+      }
+      if (FilePath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FilePath);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(FileMetadata other) {
+      if (other == null) {
+        return;
+      }
+      if (other.FileName.Length != 0) {
+        FileName = other.FileName;
+      }
+      if (other.FilePath.Length != 0) {
+        FilePath = other.FilePath;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            FileName = input.ReadString();
+            break;
+          }
+          case 18: {
+            FilePath = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            FileName = input.ReadString();
+            break;
+          }
+          case 18: {
+            FilePath = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class UploadXmlResponse : pb::IMessage<UploadXmlResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UploadXmlResponse> _parser = new pb::MessageParser<UploadXmlResponse>(() => new UploadXmlResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<UploadXmlResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UploadXmlResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UploadXmlResponse(UploadXmlResponse other) : this() {
+      isOk_ = other.isOk_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public UploadXmlResponse Clone() {
+      return new UploadXmlResponse(this);
+    }
+
+    /// <summary>Field number for the "isOk" field.</summary>
+    public const int IsOkFieldNumber = 1;
+    private bool isOk_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsOk {
+      get { return isOk_; }
+      set {
+        isOk_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as UploadXmlResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(UploadXmlResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsOk != other.IsOk) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsOk != false) hash ^= IsOk.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (IsOk != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsOk);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (IsOk != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsOk);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsOk != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(UploadXmlResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsOk != false) {
+        IsOk = other.IsOk;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IsOk = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            IsOk = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class CustomerGet : pb::IMessage<CustomerGet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1956,7 +2966,7 @@ namespace XmlData.GrpcServices {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[10]; }
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1982,7 +2992,7 @@ namespace XmlData.GrpcServices {
       contactName_ = other.contactName_;
       contactTitle_ = other.contactTitle_;
       phone_ = other.phone_;
-      fax_ = other.fax_;
+      Fax = other.Fax;
       address_ = other.address_;
       city_ = other.city_;
       region_ = other.region_;
@@ -2074,15 +3084,17 @@ namespace XmlData.GrpcServices {
 
     /// <summary>Field number for the "Fax" field.</summary>
     public const int FaxFieldNumber = 7;
-    private string fax_ = "";
+    private static readonly pb::FieldCodec<string> _single_fax_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string fax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Fax {
       get { return fax_; }
       set {
-        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        fax_ = value;
       }
     }
+
 
     /// <summary>Field number for the "Address" field.</summary>
     public const int AddressFieldNumber = 8;
@@ -2184,7 +3196,7 @@ namespace XmlData.GrpcServices {
       if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
       if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
       if (Phone.Length != 0) hash ^= Phone.GetHashCode();
-      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (fax_ != null) hash ^= Fax.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
       if (City.Length != 0) hash ^= City.GetHashCode();
       if (Region.Length != 0) hash ^= Region.GetHashCode();
@@ -2232,9 +3244,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(50);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(output, Fax);
       }
       if (Address.Length != 0) {
         output.WriteRawTag(66);
@@ -2290,9 +3301,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(50);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(ref output, Fax);
       }
       if (Address.Length != 0) {
         output.WriteRawTag(66);
@@ -2342,8 +3352,8 @@ namespace XmlData.GrpcServices {
       if (Phone.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
       }
-      if (Fax.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      if (fax_ != null) {
+        size += _single_fax_codec.CalculateSizeWithTag(Fax);
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
@@ -2390,8 +3400,10 @@ namespace XmlData.GrpcServices {
       if (other.Phone.Length != 0) {
         Phone = other.Phone;
       }
-      if (other.Fax.Length != 0) {
-        Fax = other.Fax;
+      if (other.fax_ != null) {
+        if (fax_ == null || other.Fax != "") {
+          Fax = other.Fax;
+        }
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
@@ -2448,7 +3460,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 58: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
           case 66: {
@@ -2511,7 +3526,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 58: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(ref input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
           case 66: {
@@ -2555,7 +3573,7 @@ namespace XmlData.GrpcServices {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[11]; }
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2581,7 +3599,7 @@ namespace XmlData.GrpcServices {
       contactName_ = other.contactName_;
       contactTitle_ = other.contactTitle_;
       phone_ = other.phone_;
-      fax_ = other.fax_;
+      Fax = other.Fax;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2668,15 +3686,17 @@ namespace XmlData.GrpcServices {
 
     /// <summary>Field number for the "Fax" field.</summary>
     public const int FaxFieldNumber = 7;
-    private string fax_ = "";
+    private static readonly pb::FieldCodec<string> _single_fax_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string fax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Fax {
       get { return fax_; }
       set {
-        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        fax_ = value;
       }
     }
+
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2713,7 +3733,7 @@ namespace XmlData.GrpcServices {
       if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
       if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
       if (Phone.Length != 0) hash ^= Phone.GetHashCode();
-      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (fax_ != null) hash ^= Fax.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2756,9 +3776,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(50);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(output, Fax);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2794,9 +3813,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(50);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(ref output, Fax);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2826,8 +3844,8 @@ namespace XmlData.GrpcServices {
       if (Phone.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
       }
-      if (Fax.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      if (fax_ != null) {
+        size += _single_fax_codec.CalculateSizeWithTag(Fax);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2859,8 +3877,10 @@ namespace XmlData.GrpcServices {
       if (other.Phone.Length != 0) {
         Phone = other.Phone;
       }
-      if (other.Fax.Length != 0) {
-        Fax = other.Fax;
+      if (other.fax_ != null) {
+        if (fax_ == null || other.Fax != "") {
+          Fax = other.Fax;
+        }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2902,7 +3922,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 58: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
         }
@@ -2945,7 +3968,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 58: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(ref input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
         }
@@ -2969,7 +3995,7 @@ namespace XmlData.GrpcServices {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[12]; }
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2994,7 +4020,7 @@ namespace XmlData.GrpcServices {
       contactName_ = other.contactName_;
       contactTitle_ = other.contactTitle_;
       phone_ = other.phone_;
-      fax_ = other.fax_;
+      Fax = other.Fax;
       address_ = other.address_;
       city_ = other.city_;
       region_ = other.region_;
@@ -3071,15 +4097,17 @@ namespace XmlData.GrpcServices {
 
     /// <summary>Field number for the "Fax" field.</summary>
     public const int FaxFieldNumber = 6;
-    private string fax_ = "";
+    private static readonly pb::FieldCodec<string> _single_fax_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string fax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Fax {
       get { return fax_; }
       set {
-        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        fax_ = value;
       }
     }
+
 
     /// <summary>Field number for the "Address" field.</summary>
     public const int AddressFieldNumber = 7;
@@ -3179,7 +4207,7 @@ namespace XmlData.GrpcServices {
       if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
       if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
       if (Phone.Length != 0) hash ^= Phone.GetHashCode();
-      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (fax_ != null) hash ^= Fax.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
       if (City.Length != 0) hash ^= City.GetHashCode();
       if (Region.Length != 0) hash ^= Region.GetHashCode();
@@ -3223,9 +4251,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(42);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(output, Fax);
       }
       if (Address.Length != 0) {
         output.WriteRawTag(58);
@@ -3277,9 +4304,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(42);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(ref output, Fax);
       }
       if (Address.Length != 0) {
         output.WriteRawTag(58);
@@ -3326,8 +4352,8 @@ namespace XmlData.GrpcServices {
       if (Phone.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
       }
-      if (Fax.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      if (fax_ != null) {
+        size += _single_fax_codec.CalculateSizeWithTag(Fax);
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
@@ -3371,8 +4397,10 @@ namespace XmlData.GrpcServices {
       if (other.Phone.Length != 0) {
         Phone = other.Phone;
       }
-      if (other.Fax.Length != 0) {
-        Fax = other.Fax;
+      if (other.fax_ != null) {
+        if (fax_ == null || other.Fax != "") {
+          Fax = other.Fax;
+        }
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
@@ -3425,7 +4453,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 50: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
           case 58: {
@@ -3484,7 +4515,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 50: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(ref input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
           case 58: {
@@ -3528,7 +4562,7 @@ namespace XmlData.GrpcServices {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[13]; }
+      get { return global::XmlData.GrpcServices.CustomerReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3554,7 +4588,7 @@ namespace XmlData.GrpcServices {
       contactName_ = other.contactName_;
       contactTitle_ = other.contactTitle_;
       phone_ = other.phone_;
-      fax_ = other.fax_;
+      Fax = other.Fax;
       address_ = other.address_;
       city_ = other.city_;
       region_ = other.region_;
@@ -3646,15 +4680,17 @@ namespace XmlData.GrpcServices {
 
     /// <summary>Field number for the "Fax" field.</summary>
     public const int FaxFieldNumber = 7;
-    private string fax_ = "";
+    private static readonly pb::FieldCodec<string> _single_fax_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string fax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Fax {
       get { return fax_; }
       set {
-        fax_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        fax_ = value;
       }
     }
+
 
     /// <summary>Field number for the "Address" field.</summary>
     public const int AddressFieldNumber = 8;
@@ -3756,7 +4792,7 @@ namespace XmlData.GrpcServices {
       if (ContactName.Length != 0) hash ^= ContactName.GetHashCode();
       if (ContactTitle.Length != 0) hash ^= ContactTitle.GetHashCode();
       if (Phone.Length != 0) hash ^= Phone.GetHashCode();
-      if (Fax.Length != 0) hash ^= Fax.GetHashCode();
+      if (fax_ != null) hash ^= Fax.GetHashCode();
       if (Address.Length != 0) hash ^= Address.GetHashCode();
       if (City.Length != 0) hash ^= City.GetHashCode();
       if (Region.Length != 0) hash ^= Region.GetHashCode();
@@ -3804,9 +4840,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(50);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(output, Fax);
       }
       if (Address.Length != 0) {
         output.WriteRawTag(66);
@@ -3862,9 +4897,8 @@ namespace XmlData.GrpcServices {
         output.WriteRawTag(50);
         output.WriteString(Phone);
       }
-      if (Fax.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Fax);
+      if (fax_ != null) {
+        _single_fax_codec.WriteTagAndValue(ref output, Fax);
       }
       if (Address.Length != 0) {
         output.WriteRawTag(66);
@@ -3914,8 +4948,8 @@ namespace XmlData.GrpcServices {
       if (Phone.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
       }
-      if (Fax.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fax);
+      if (fax_ != null) {
+        size += _single_fax_codec.CalculateSizeWithTag(Fax);
       }
       if (Address.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
@@ -3962,8 +4996,10 @@ namespace XmlData.GrpcServices {
       if (other.Phone.Length != 0) {
         Phone = other.Phone;
       }
-      if (other.Fax.Length != 0) {
-        Fax = other.Fax;
+      if (other.fax_ != null) {
+        if (fax_ == null || other.Fax != "") {
+          Fax = other.Fax;
+        }
       }
       if (other.Address.Length != 0) {
         Address = other.Address;
@@ -4020,7 +5056,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 58: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
           case 66: {
@@ -4083,7 +5122,10 @@ namespace XmlData.GrpcServices {
             break;
           }
           case 58: {
-            Fax = input.ReadString();
+            string value = _single_fax_codec.Read(ref input);
+            if (fax_ == null || value != "") {
+              Fax = value;
+            }
             break;
           }
           case 66: {

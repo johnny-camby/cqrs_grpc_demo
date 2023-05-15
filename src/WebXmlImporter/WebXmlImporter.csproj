@@ -15,15 +15,27 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Protobuf Include="..\XmlData.GrpcServices\Protos\customer.proto">
-      <Link>Protos\customer.proto</Link>
-    </Protobuf>
-  </ItemGroup>
+  
 
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
     <ProjectReference Include="..\Data.Repository\Data.Repository.csproj" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Protobuf Include="..\..\customer.proto" GrpcServices="Client">
+      <Link>Protos\customer.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <None Update="meterselfcert.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>  
 
 </Project>

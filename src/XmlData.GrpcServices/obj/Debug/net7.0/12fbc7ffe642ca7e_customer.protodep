@@ -1,2 +1,3 @@
 obj\Debug\net7.0\Protos/Customer.cs \
-obj\Debug\net7.0\Protos/CustomerGrpc.cs: Protos/customer.proto
+obj\Debug\net7.0\Protos/CustomerGrpc.cs: C:/Users/xplic/.nuget/packages/grpc.tools/2.49.0/build/native/include/google/protobuf/wrappers.proto\
+ Protos/customer.proto

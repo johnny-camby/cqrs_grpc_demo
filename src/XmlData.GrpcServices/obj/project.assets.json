@@ -256,6 +256,25 @@
           "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.Certificate/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Certificate.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Certificate.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "type": "package",
         "dependencies": {
@@ -1687,6 +1706,21 @@
         "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll",
         "mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
         "mediatr.extensions.microsoft.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Certificate/7.0.5": {
+      "sha512": "E/rJI8LO5AdJz6ENma1cKDZ1daOPH56C/cspPe5zAnr4I1JRPnPKyxnUPT3X1hnYexT0wq3giFuZXin8b14cIw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.certificate/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Certificate.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Certificate.xml",
+        "microsoft.aspnetcore.authentication.certificate.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.certificate.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Http.Features/5.0.17": {
@@ -3874,7 +3908,8 @@
     "net7.0": [
       "BusinessLogic >= 1.0.0",
       "Grpc.AspNetCore >= 2.49.0",
-      "MediatR >= 11.0.0"
+      "MediatR >= 11.0.0",
+      "Microsoft.AspNetCore.Authentication.Certificate >= 7.0.5"
     ]
   },
   "packageFolders": {
@@ -3933,6 +3968,10 @@
           "MediatR": {
             "target": "Package",
             "version": "[11.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Certificate": {
+            "target": "Package",
+            "version": "[7.0.5, )"
           }
         },
         "imports": [

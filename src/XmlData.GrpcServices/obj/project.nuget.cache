@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XTZrUkPB0QzW28+95pvGQ/lnhRYPiOdCsieQqdKNjDh+m6APQ6FguuKHOP+SVUG8lOVAC/lQ/K+zoSkooBDaMw==",
+  "dgSpecHash": "efb6e+88I7GOuARFR6G5iJzs8CWquK3cxbaZn+hQ+LMOe/sQk+rEh3eUzJ2KpkJxirtY9U7szDjRd1MX5SnxKg==",
   "success": true,
   "projectFilePath": "D:\\dev\\cqrs_grpc_demo\\src\\XmlData.GrpcServices\\XmlData.GrpcServices.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\xplic\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\xplic\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\xplic\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\xplic\\.nuget\\packages\\microsoft.aspnetcore.authentication.certificate\\7.0.5\\microsoft.aspnetcore.authentication.certificate.7.0.5.nupkg.sha512",
     "C:\\Users\\xplic\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\xplic\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\xplic\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

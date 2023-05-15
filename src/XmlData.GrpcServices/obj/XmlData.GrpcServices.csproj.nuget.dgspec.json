@@ -203,6 +203,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Certificate": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             }
           },
           "imports": [

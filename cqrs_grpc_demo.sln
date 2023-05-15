@@ -7,21 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{03
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{58C52C2D-93FD-4CE0-A64E-58447423FB0E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{11DA8A1C-8E93-4BA2-A1F0-BBDEA8277D91}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{11DA8A1C-8E93-4BA2-A1F0-BBDEA8277D91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Repository", "src\Data.Repository\Data.Repository.csproj", "{2723D4FC-C901-48B4-9BC7-67B6EA54555F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Repository", "src\Data.Repository\Data.Repository.csproj", "{2723D4FC-C901-48B4-9BC7-67B6EA54555F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlData.GrpcServices", "src\XmlData.GrpcServices\XmlData.GrpcServices.csproj", "{F2D7AE1A-0D03-40A6-912E-35C6868E6A7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlData.GrpcServices", "src\XmlData.GrpcServices\XmlData.GrpcServices.csproj", "{F2D7AE1A-0D03-40A6-912E-35C6868E6A7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "src\BusinessLogic\BusinessLogic.csproj", "{78BF5BAA-1DAF-44CB-AAE2-9A4E17EDC96F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "src\BusinessLogic\BusinessLogic.csproj", "{78BF5BAA-1DAF-44CB-AAE2-9A4E17EDC96F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{F37A6FDA-8D51-4D91-9B43-36E29341E5DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDataExtractManager", "src\XmlDataExtractManager\XmlDataExtractManager.csproj", "{1C0D97BF-7656-4A13-905F-216F46DC7BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlDataExtractManager", "src\XmlDataExtractManager\XmlDataExtractManager.csproj", "{1C0D97BF-7656-4A13-905F-216F46DC7BD3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{816FD400-4B31-4CE1-BAF9-C4B37BB660A7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{816FD400-4B31-4CE1-BAF9-C4B37BB660A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebXmlImporter", "src\WebXmlImporter\WebXmlImporter.csproj", "{81D00984-3364-4830-80CB-1BF3AB512402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebXmlImporter", "src\WebXmlImporter\WebXmlImporter.csproj", "{81D00984-3364-4830-80CB-1BF3AB512402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,16 +1,28 @@
-﻿using Data.Repository.Entities;
+﻿
+using Data.Repository.Entities;
 using Data.Repository.Interfaces;
 using Grpc.Core;
+using Microsoft.AspNetCore.Authentication.Certificate;
+using Microsoft.AspNetCore.Authorization;
+using XmlDataExtractManager.Interfaces;
+using static XmlData.GrpcServices.CustomerData;
 
 namespace XmlData.GrpcServices.Services
 {
-    public class CustomerService : CustomerData.CustomerDataBase
+    [Authorize(AuthenticationSchemes = CertificateAuthenticationDefaults.AuthenticationScheme)]
+    public class CustomerService : CustomerDataBase
     {
         private readonly IXmlImporterRepository<CustomerEntity> _customerRepository;
+        private readonly IXmlDataExtractorService _xmlDataExtractorService;
+        private readonly IConfiguration _config;
 
-        public CustomerService(IXmlImporterRepository<CustomerEntity> customerRepository)
+        public CustomerService(IXmlImporterRepository<CustomerEntity> customerRepository,
+            IXmlDataExtractorService xmlDataExtractorService
+            , IConfiguration config)
         {
             _customerRepository = customerRepository ?? throw new ArgumentNullException(nameof(customerRepository));
+            _xmlDataExtractorService = xmlDataExtractorService ?? throw new ArgumentNullException(nameof(xmlDataExtractorService));
+            _config = config ?? throw new ArgumentNullException(nameof(config));
         }
 
         public override async Task<CustomersResponse> GetCustomers(CustomersRequest request, ServerCallContext context)
@@ -26,7 +38,7 @@ namespace XmlData.GrpcServices.Services
                 ContactName = customer.ContactName,
                 ContactTitle = customer.ContactTitle,
                 CustomerID = customer.CustomerID,
-                //Fax = customer.Fax,
+                Fax = customer.Fax,
                 Phone = customer.Phone,
             }).ToList();
 
@@ -48,7 +60,7 @@ namespace XmlData.GrpcServices.Services
                     ContactTitle = customer.ContactTitle,
                     CustomerID = customer.CustomerID,
                     Phone = customer.Phone,
-                    //Fax = customer.Fax,
+                    Fax = customer.Fax,
                     Address = customer.FullAddress.Address,
                     City = customer.FullAddress.City,
                     Region = customer.FullAddress.Region,
@@ -66,7 +78,7 @@ namespace XmlData.GrpcServices.Services
                 CompanyName = request.Customer.CompanyName,
                 ContactName = request.Customer.ContactName,
                 ContactTitle = request.Customer.ContactTitle,
-                //Fax = request.Customer.Fax,
+                Fax = request.Customer.Fax,
                 Phone = request.Customer.Phone,
                 FullAddress = new FullAddressEntity
                 {
@@ -151,8 +163,68 @@ namespace XmlData.GrpcServices.Services
             var customer = await _customerRepository.GetAsync(Guid.Parse(request.CustomerId));
 
             await _customerRepository.DeleteAsync(customer);
-            return new DeleteCustomerResponse 
-            {};
+            return new DeleteCustomerResponse
+            { };
+        }
+
+        public override async Task<UploadXmlResponse> UploadXml(IAsyncStreamReader<UploadXmlRequest> requestStream, ServerCallContext context)
+        {
+            var data = new List<byte>();
+
+            await foreach(var message in requestStream.ReadAllAsync())
+            {
+                if (message.Metadata != null)
+                {
+                    await _xmlDataExtractorService.ProcessXmlAsync(message.Metadata.FilePath);
+                }
+
+            }
+
+            while (await requestStream.MoveNext())
+            {
+                data.AddRange(requestStream.Current.Data);
+
+                if (data.Any())
+                {
+                    await _xmlDataExtractorService.ProcessXmlAsync(requestStream.Current.Metadata.FilePath);
+                }
+            }
+
+            // using FileStream writeStream = await ProcessStream(requestStream);
+
+            return new UploadXmlResponse { IsOk = true };
+        }
+
+        private async Task<FileStream> ProcessStream(IAsyncStreamReader<UploadXmlRequest> requestStream)
+        {
+            string path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles"));
+            //var uploadId = Path.GetRandomFileName();
+            //string path = Path.Combine(_config["StoredFilesPath"]!, uploadId);
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            var filePath = Path.Combine(path, "metadata.json");
+            var writeStream = File.Create(Path.Combine(path, "data.bin"));
+
+            var dv = requestStream.ReadAllAsync();
+
+            await foreach (var message in requestStream.ReadAllAsync())
+            {
+                if (message.Metadata != null)
+                {
+                    await File.WriteAllTextAsync(filePath, message.Metadata.ToString());
+                }
+
+                if (message.Data != null)
+                {
+                    await writeStream.WriteAsync(message.Data.Memory);
+                }
+            }
+
+            await _xmlDataExtractorService.ProcessXmlAsync(path);
+            return writeStream;
         }
     }
 }
